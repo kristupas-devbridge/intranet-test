@@ -1,0 +1,89 @@
+//Reusable global parameters (containers, wrappers.. )
+.app-container {
+    height: 100%;
+    margin: 0 auto;
+    max-width: 1260px;
+    width: 100%;
+}
+
+.wrapper {
+    height: 100%;
+    position: relative;
+    width: 100%;
+}
+
+.flex-container {
+    &-center {
+        align-items: center;
+        display: flex;
+        justify-content: center;
+    }
+
+    &-space-between {
+        align-items: center;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &-start {
+        align-items: center;
+        display: flex;
+        justify-content: flex-start;
+
+        &--end {
+            align-items: flex-end;
+        }
+    }
+
+    &-end {
+        align-items: center;
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    &-space-around {
+        align-items: center;
+        display: flex;
+        justify-content: space-around;
+    }
+
+    &-column {
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+        &--left {
+            justify-content: flex-start;
+        }
+    }
+}
+
+.flex-wrap {
+    flex-wrap: wrap;
+}
+
+.activity-indication {
+    left: 58%;
+    position: absolute;
+    top: 8px;
+    transform: translateX(-58%);
+}
+
+.image-container {
+    @include flex-container();
+}
+
+.pos-absolute {
+    &-bottom {
+        &-left {
+            bottom: 0;
+            left: 0;
+            position: absolute;
+        }
+    }
+}
+
+.pos-relative {
+    position: relative;
+}

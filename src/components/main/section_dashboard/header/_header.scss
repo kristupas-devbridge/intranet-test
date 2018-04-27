@@ -1,0 +1,68 @@
+%header-shadow {
+    box-shadow: 0px 1px 0px 0px #e6e6e8;
+}
+
+.dashboard-header {
+    background: $white;
+    color: $rolling-stone;
+    height: 48px;
+    font-size: .875rem;
+    @extend %header-shadow;
+
+    &__item {
+        height: 100%;
+
+        &--left {
+            width: 80%;
+        }
+
+        &--right {
+            background: #30aed6;
+            width: 20%;
+        }
+    }
+}
+
+.dashboard-filter {
+    display: inline-block;
+    height: 100%;
+    min-width: 100px;
+    margin-right: 20px;
+
+    &--active {
+        color: $woodsmoke;
+
+        &::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            height: 2px;
+            background: $scooter;
+        }
+    }
+}
+
+.icon {
+    &-filter {
+        margin: 0 3px;
+    }
+
+    &-squad {
+        @include svg-sprite(squad-ico);
+    }
+
+    &-projects {
+        @include svg-sprite(projects-ico);
+    }
+
+    &-ads {
+        @include svg-sprite(ads-ico);
+    }
+
+    &-social-feed {
+        @include svg-sprite(social-feed-ico);
+    }
+}
+

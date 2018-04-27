@@ -3,9 +3,27 @@
 //MAIN COLOR PALETTE
 $black: #000;
 $white: #fff;
+$woodsmoke: #13191b;
+$rolling-stone: #7b8487;
+$rolling-stone-light: #82898f;
+$scooter: #30aed6;
+$shark: #1d2329;
+$limed-spruce: #2f3a44;
+$limed-spruce-light: #3f4d59;
 
 //COMMON COLORS
 
 //LINK COLORS
 
 //SELECTION COLORS
+
+//COLOR CLASSES
+.color {
+    &-white {
+        color: $white;
+    }
+
+    &-scooter {
+        color: $scooter;
+    }
+}
