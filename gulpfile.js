@@ -22,8 +22,7 @@ gulp.task("develop-plain", function () {
 });
 
 gulp.task("sass-lint", function() {
-    return gulp.src('./src/scss/**/*.scss')
-        .pipe(sassLint())
-        .pipe(sassLint.format())
-        .pipe(sassLint.failOnError())
+    require('gulp-task-loader')();
+
+    return gulp.start('scss-linting');
 });

@@ -20,8 +20,7 @@
 
 // Plugins - Styles of third party plugins
 // Global modules - modules shared between multiple projects (e.g. admin and public sites)
-@import './src/components/notifications/notifications',
-'./src/components/form-elements/index';
+@import './src/components/notifications/notifications';
 
 // Local modules
 @import 'components/headings';
@@ -30,8 +29,7 @@
 @import 'components/helpers',
 './src/components/header/header',
 './src/components/main/section_account-info/section_account-info',
-'./src/components/main/section_dashboard/header/header',
-'./src/components/footer/footer';
+'./src/components/main/section_dashboard/header/header';
 
 // Print stylesheet
 @import 'print';
