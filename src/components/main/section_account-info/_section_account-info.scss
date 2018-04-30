@@ -45,6 +45,7 @@
         height: 24px;
         margin: 0 4px;
         width: 24px;
+        display: block;
         @include flex-container();
     }
 }
