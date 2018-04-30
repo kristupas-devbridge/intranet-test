@@ -58,6 +58,7 @@ module.exports = function () {
             ],
             lint: [
                 `./${app}/scss/**/*.scss`,
+                `./${app}/components/**/*.scss`,
                 `!./${app}/scss/base/_svg-sprite-map.scss`,
                 `!./${app}/scss/base/_svg-sprite.scss`,
                 `!./${app}/scss/**/*_scsslint_tmp*.scss`,

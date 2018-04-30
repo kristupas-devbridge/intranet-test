@@ -1,3 +1,72 @@
-.page-header {
+$header-height: 58px;
 
+.page-header {
+    background: $woodsmoke;
+    color: $rolling-stone;
+    height: $header-height;
+
+    a {
+        transition: color .3s ease;
+
+        &:hover {
+            color: $white;
+        }
+    }
+
+    // Item
+    &__item {
+        width: calc(100% / 3);
+    }
+
+    // Navigation
+    &__nav {
+        font-size: 13px;
+        font-weight: 600;
+        text-transform: uppercase;
+
+        ul {
+
+            li {
+                display: inline;
+            }
+        }
+    }
+
+    // Icon
+    &__icon {
+        height: 40px;
+        min-width: 40px;
+        position: relative;
+        width: 15%;
+        @include flex-container();
+    }
+}
+
+.icon {
+
+    &__search {
+        @include svg-sprite(search);
+    }
+
+    &__bell {
+        @include svg-sprite(bell);
+    }
+
+    &__ellipse {
+        &--active {
+            @include svg-sprite(ellipse-1);
+        }
+    }
+}
+
+@media only screen and (max-width: 760px) {
+    .page-header {
+        &__hamburger {
+            display: block!important;
+        }
+
+        &__nav {
+            display: none;
+        }
+    }
 }

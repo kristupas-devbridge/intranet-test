@@ -1,0 +1,121 @@
+
+
+%about-heading {
+    color: $rolling-stone-light;
+    font-size: .75rem;
+    text-transform: uppercase;
+}
+
+.account-info {
+    background: $shark;
+    height: 330px;
+    width: 100%;
+
+    &__item {
+        height: 80%;
+
+        &-left {
+            width: 22%;
+        }
+
+        &-right {
+            width: 63%;
+        }
+    }
+
+    &__profile {
+        height: 100%;
+        width: 100%;
+    }
+}
+
+.profile-item {
+    height: 30%;
+    width: 90%;
+
+    &__figure {
+        height: 70%;
+    }
+
+    &__social-links {
+        height: 20%;
+    }
+
+    &__social-icon {
+        background: $limed-spruce;
+        border-radius: 50%;
+        display: block;
+        height: 24px;
+        margin: 0 4px;
+        width: 24px;
+        @include flex-container();
+    }
+}
+
+.social {
+    &__twitter {
+        @include svg-sprite(twitter);
+    }
+
+    &__facebook {
+        @include svg-sprite(facebook);
+    }
+
+    &__linkedin {
+        @include svg-sprite(linkedin);
+    }
+
+    &__flickr {
+        @include svg-sprite(flickr);
+    }
+}
+
+.account-about {
+    &__item {
+        height: 32%;
+        width: 94%;
+    }
+
+    &__contacts {
+        height: 24%;
+    }
+
+    &__facts {
+        border-bottom: 1px solid $limed-spruce;
+        border-top: 1px solid $limed-spruce;
+        color: $white;
+        font-size: .94rem;
+        line-height: 1.2;
+    }
+}
+
+.contacts-item {
+    padding-right: 40px;
+
+    &__property {
+        @extend %about-heading;
+    }
+
+    &__value {
+        color: $white;
+    }
+}
+
+.skills-item {
+    width: 100%;
+}
+
+.skills-heading {
+    @extend %about-heading;
+    line-height: 2.5;
+}
+
+.skill-button {
+    background: $limed-spruce;
+    border: 1px solid $limed-spruce-light;
+    border-radius: 3px;
+    color: $white;
+    font-size: .8rem;
+    padding: .5rem;
+}
+

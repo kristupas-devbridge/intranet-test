@@ -1,4 +1,5 @@
 var gulp = require('gulp'),
+    sassLint = require('gulp-sass-lint'),
     config = require('./gulp.config.js')();
 
 // Load all tasks from gulp-tasks folder
@@ -20,3 +21,15 @@ gulp.task("develop-plain", function () {
     return gulp.start('develop');
 });
 
+gulp.task("sass-lint", function() {
+    require('gulp-task-loader')();
+
+    return gulp.start('scss-linting');
+});
+
+// gulp.task('sass-lint', function () {
+//     return gulp.src('src/scss/**/*.scss')
+//         .pipe(sassLint())
+//         .pipe(sassLint.format())
+//         .pipe(sassLint.failOnError())
+// });
