@@ -1,5 +1,9 @@
+$button-border-color: #d9dce2;
+$button-shadow-color: #e9ecf2;
+$shadow-color: #e6e6e8;
+
 %header-shadow {
-    box-shadow: 0 1px 0 0 #e6e6e8;
+    box-shadow: 0 1px 0 0 $shadow-color;
 }
 
 .dashboard-header {
@@ -49,9 +53,9 @@
 
 .dashboard-button {
     background: none;
-    border: 1px solid #d9dce2;
+    border: 1px solid $button-border-color;
     border-radius: 3px;
-    box-shadow: 0px 1px 2px 0px #e9ecf2;
+    box-shadow: 0 1px 2px 0 $button-shadow-color;
     color: $rolling-stone;
     cursor: pointer;
     font-size: .8125rem;
@@ -64,9 +68,9 @@
     }
 
     &--active {
-        border: 1px solid #bbbbbb;
+        border: 1px solid $gray-b;
+        box-shadow: 0 1px 2px 0 $gray-d;
         color: $black;
-        box-shadow: 0px 1px 2px 0px #dddddd;
     }
 
 }

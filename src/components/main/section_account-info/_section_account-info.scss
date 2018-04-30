@@ -1,3 +1,5 @@
+
+
 %about-heading {
     color: $rolling-stone-light;
     font-size: .75rem;
@@ -42,10 +44,10 @@
     &__social-icon {
         background: $limed-spruce;
         border-radius: 50%;
+        display: block;
         height: 24px;
         margin: 0 4px;
         width: 24px;
-        display: block;
         @include flex-container();
     }
 }
@@ -54,12 +56,15 @@
     &__twitter {
         @include svg-sprite(twitter);
     }
+
     &__facebook {
         @include svg-sprite(facebook);
     }
+
     &__linkedin {
         @include svg-sprite(linkedin);
     }
+
     &__flickr {
         @include svg-sprite(flickr);
     }

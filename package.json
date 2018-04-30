@@ -40,7 +40,7 @@
         "yargs": "11.0.0"
     },
     "scripts": {
-        "start": "concurrently --kill-others \"gulp develop-plain\" \"npm run webpack\"",
+        "start": "gulp develop-plain",
         "start-safe": "gulp develop-safe",
         "webpack": "webpack -d --watch"
     },
@@ -51,7 +51,6 @@
     },
     "homepage": "https://github.com/devbridge/Front-End-Toolkit",
     "devDependencies": {
-        "check-dependencies": "1.1.0",
-        "concurrently": "3.5.1"
+        "check-dependencies": "1.1.0"
     }
 }
