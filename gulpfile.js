@@ -26,3 +26,10 @@ gulp.task("sass-lint", function() {
 
     return gulp.start('scss-linting');
 });
+
+// gulp.task('sass-lint', function () {
+//     return gulp.src('src/scss/**/*.scss')
+//         .pipe(sassLint())
+//         .pipe(sassLint.format())
+//         .pipe(sassLint.failOnError())
+// });
