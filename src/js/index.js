@@ -1,5 +1,7 @@
-import Header from '../components/main/section_dashboard/header/header';
+import PageHeader from '../components/header/header';
+import MainSectionHeader from '../components/main/section_dashboard/header/header';
 
 (function() {
-    Header();
+    PageHeader();
+    MainSectionHeader();
 }());

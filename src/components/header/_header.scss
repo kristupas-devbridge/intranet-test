@@ -24,6 +24,14 @@ $header-height: 58px;
         font-weight: 600;
         text-transform: uppercase;
 
+        &.hidden {
+            display: none;
+        }
+
+        &.visible {
+            display: block;
+        }
+
         ul {
 
             li {
@@ -55,18 +63,6 @@ $header-height: 58px;
     &__ellipse {
         &--active {
             @include svg-sprite(ellipse-1);
-        }
-    }
-}
-
-@media only screen and (max-width: 760px) {
-    .page-header {
-        &__hamburger {
-            display: block!important;
-        }
-
-        &__nav {
-            display: none;
         }
     }
 }
